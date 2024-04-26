@@ -25,7 +25,7 @@ Proposed Solutions
 - Con: Not ideal for applications requiring complex state management across many components, where SPAs excel.
   
 ### Improved User Experience with Minimal Overhead
-- Benefit: Turbo enhances user experience by enabling partial page updates and real-time interactions, reducing page reloads using AJAX in the back.
+- Benefit: Turbo enhances user experience by enabling partial page updates and real-time interactions, reducing page reloads using AJAX under the hood.
 - Con: Dependence on server responses can create performance bottlenecks under high load or slow network conditions.
   
 ### Maintenance and Scalability
