@@ -16,8 +16,6 @@ Proposed Solutions
 
 ## Reasons for Choosing Hotwire, Turbo, and Stimulus
 
-![screenshot](https://www.ducktypelabs.com/assets/images/hotwire.png](https://www.bacancytechnology.com/blog/wp-content/uploads/2023/01/Hotwire-Stack.webp)
-
 ### Seamless Integration with Rails
 - Benefit: Integrates smoothly with Rails, utilizing server-rendered HTML to reduce complexity and the need for additional APIs. 
 - Con: May limit flexibility in adopting non-traditional UI architectures or advanced features more easily implemented with SPAs.
@@ -38,12 +36,10 @@ Proposed Solutions
 - Benefit: Reduces the need for separate front-end tools and specialized knowledge, lowering developmental and training costs.
 - Con: Refactoring to fully utilize Hotwire and Turbo might incur hidden costs, especially if the existing system heavily uses custom JavaScript or external libraries.
 
-![screenshot](https://i.ibb.co/3SnRyzs/Screenshot-2024-04-26-at-11-51-08-AM.png)
-
 ## Option 1 - Upgrading Existing Rails 6 Application - Steps to Upgrade
 
 ## Upgrade Architecture Diagram
-![screenshot](https://i.ibb.co/RvNGDWx/Screenshot-2024-04-26-at-12-11-08-PM.png)
+![screenshot](https://i.ibb.co/b5gxnF2/rrr.png)
 
 ### Update Dependencies and Rails Version
 - Ensure all gems are compatible with Rails 7.
