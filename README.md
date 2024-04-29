@@ -67,7 +67,7 @@ Proposed Solutions
 - Optimize performance and address any issues.
 
 
-## Option 2: Creating a New Rails 7/ Project
+## Option 2: Creating a New Rails 7/8 Project
 
 ### New Project Architecture Diagram
 ![screenshot](https://i.ibb.co/ZHp4pb0/Screenshot-2024-04-26-at-11-32-30-AM.png)
@@ -82,6 +82,23 @@ Proposed Solutions
 - Migrate Data and Business Logic
 - Carefully port models and business logic.
 - Parallel Running, temporarily run both versions to ensure stability.
+
+## Assumptions
+
+### Based on the provided information, the following assumptions guide my approach:
+- The term “modernizing a Rails monolith” seems broad, but given the context, it appears to primarily refer to the UI. Therefore, my focus will be on UI enhancements.
+- There is no explicit mention of a dedicated front-end team, leading me to assume that the development is handled by full-stack Rails engineers and that the application itself is not overly complex.
+- The absence of mockups or details about the existing app suggests a need for a standard SaaS UI without elaborate designs.
+- It is assumed that our payments application integrates with a third-party gateway that provides an SDK, thus obviating the need for direct front-end PCI Compliance handling.
+
+## Decisions
+
+### With a focus on maintainability and ease of modification as primary objectives, the following decisions have been made:
+- CSS Framework: Implement a class-based UI framework such as Tailwind or Bootstrap 5 to ensure a flexible and maintainable styling approach.
+- Template Engine: Use Haml for its simplicity and readability, which enhances the speed of development and maintenance.
+- Front-end Frameworks: Adopt Hotwire and Stimulus, aligning with the modern capabilities of Rails 7/8 and facilitating an efficient full-stack Rails development environment.
+- Testing: Integrate Cypress.js for comprehensive front-end testing to verify both appearance and functionality, ensuring a robust user interface.
+- Build System: Use Importmaps for simpler JavaScript needs in Rails 7/8, which eliminates extra build tools or opt for Rollup if the application requires complex JavaScript management and optimization.
 
 ## Conclusion
 
